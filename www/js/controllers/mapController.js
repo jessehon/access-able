@@ -21,6 +21,8 @@ angular.module('starter').controller('MapController',
        */
       $scope.$on("$stateChangeSuccess", function() {
 
+        $scope.startLocation = {};
+        $scope.endLocation = {};
         $scope.locations = LocationsService.savedLocations;
         $scope.newLocation;
 
@@ -220,10 +222,14 @@ angular.module('starter').controller('MapController',
       });
 
       $scope.saveLocation = function() {
-        LocationsService.savedLocations.push($scope.newLocation);
+        LocationsService.savedLocations[$scope.newLocation.name] = $scope.newLocation;
         $scope.modal.hide();
-        $scope.goTo(LocationsService.savedLocations.length - 1);
+        $scope.goTo($scope.newLocation.name);
       };
+
+      $scope.searchRoute = function() {
+
+      }
 
       /**
        * Center map on specific saved location
