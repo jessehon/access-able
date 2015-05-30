@@ -191,7 +191,7 @@ angular.module('starter').controller('MapController',
           {lng:144.9704288,lat:-37.8143781,icon:$scope.map.tramStopIcon,message:"7-101 Collins St (Melbourne City)"},
         ];
 
-        $scope.goTo(0);
+        $scope.goTo("Home");
 
       });
 
