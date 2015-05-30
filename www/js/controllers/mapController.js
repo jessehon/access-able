@@ -51,7 +51,7 @@ angular.module('starter').controller('MapController',
               shadowSize:   [0, 0], // size of the shadow
               iconAnchor:   [10, 30], // point of the icon which will correspond to marker's location
               // shadowAnchor: [4, 62],  // the same for the shadow
-              popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+              popupAnchor:  [0, -20] // point from which the popup should open relative to the iconAnchor
           },
           events: {
             map: {
