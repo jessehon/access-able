@@ -18,3 +18,22 @@ body {
 .tabs.border-top {
   border-top: 1px solid #ddd !important;
 }
+
+.angular-leaflet-map {
+  height: 80%;
+}
+
+.bottom-menu {
+  position: absolute;
+  bottom: 0px;
+  height: 20%;
+  left: 0px;
+  right: 0px;
+  background-color: #923E99;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bar-positive {
+  background-color: #923E99 !important;
+}
